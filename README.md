@@ -9,7 +9,7 @@ The most simple way to use JQuery async.
 
 ## Archiviments
 
-The goal is load JQuery asynchronessly with a short code. The minified version have 152 bytes.
+The goal is load JQuery asynchronessly with a short code. The minified version have 116 bytes. (less then a tweet)
 
 Can be done shorter, can be done more semantical. It's your choice, fork it! ;-)
 
@@ -23,21 +23,21 @@ Load JQuery from a repository using async tag.
 
 Use the function a$() to load:
 
-   // Run when dom ready
-   a$(document, function(){
-      // do something when document has been ready
-   });
-
-   // Run when window has loaded
-   a$(window, function(){
-      // do something when document has been ready
-   }, true);
-
-   // Execute the elemnt by CSS
-   a$("#WFI" , function(){
-      // do something when document has been ready
-      $("#WFI").remove();
-   });
+    // Run when dom ready
+    a$(document, function(){
+       // do something when document has been ready
+    });
+    
+    // Run when window has loaded
+    a$(window, function(){
+       // do something when document has been ready
+    }, true);
+    
+    // Execute the elemnt by CSS
+    a$("#WFI" , function(){
+       // do something when document has been ready
+       $("#WFI").remove();
+    });
 
 ## Parameters and Options
 
