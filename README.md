@@ -30,12 +30,12 @@ Use the function a$() to load:
     
     // Run when window has loaded
     a$(window, function(){
-       // do something when document has been ready
+       // do something $(window).load()
     }, true);
     
     // Execute the elemnt by CSS
     a$("#WFI" , function(){
-       // do something when document has been ready
+       // do something CSS element was ready
        $("#WFI").remove();
     });
 
