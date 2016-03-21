@@ -20,9 +20,8 @@ function aJQ(any) {
     },99);
     return;
   }
-  if(any[0] == "r"){
-    $(any[1]);
-  }else if (any[0] == "l") {
-    $(window).load(any[1]);
+  if(any[0] == "$"){
+    return any[1]();
   }
+  (any[0] == "r" ? $(any[1]) : $(any[0]).load(any[1]))
 }
