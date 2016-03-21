@@ -21,14 +21,14 @@
    });
 */
 
+function a$(el, func, isLoad) {
 
-function a$(el, func, load) {
+  (typeof $ === "undefined" ?
+      setTimeout(function(){a$(el, func, isLoad)},99) :
+      (isLoad ?
+          $(el).load(func()) :
+          $(el).ready(func())
+      )
+  )
 
-  if (typeof $ === "undefined"){
-    setTimeout(function(){
-      a$(el, func, load)
-    },99)
-  } else {
-    (load ? $(el).load(func()) : $(el).ready(func()))
-  }
 }
