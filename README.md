@@ -21,20 +21,28 @@ Load JQuery from a repository using async tag.
 
     <script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
 
-Use the function aJQ() to load:
+Use the function a$() to load:
 
-    aJQ(["r", function(){
-        // any jquery code
-    }])
+   // Run when dom ready
+   a$(document, function(){
+      // do something when document has been ready
+   });
 
-or this way for $(window).load():
+   // Run when window has loaded
+   a$(window, function(){
+      // do something when document has been ready
+   }, true);
 
-    aJQ([window, function(){
-        // any jquery code
-    }])
+   // Execute the elemnt by CSS
+   a$("#WFI" , function(){
+      // do something when document has been ready
+      $("#WFI").remove();
+   });
 
 ## Parameters and Options
 
-You can chose between 'r' for document ready or '$' for raw function after jquery was loaded or any dom for $.load function
+el - element to confirm whe it is ready (of course it has to be done before jQuery Loading)
+func - function with executables to be done.
+isLoad - A boolean to verify which case will execute, as .load() or as .ready() (True for .load())
 
-Usualy the "ready" will run first as "load".
+The "ready" will run first as "load". Sometimes "load" will be inconsistent for elemnts.
