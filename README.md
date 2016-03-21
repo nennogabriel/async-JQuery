@@ -9,7 +9,7 @@ The most simple way to use JQuery async.
 
 ## Archiviments
 
-The goal is load JQuery asynchronessly with a short code. The minified version have 140 characters even with 3 chars in the name.
+The goal is load JQuery asynchronessly with a short code. The minified version have 152 bytes.
 
 Can be done shorter, can be done more semantical. It's your choice, fork it! ;-)
 
