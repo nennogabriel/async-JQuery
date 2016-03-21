@@ -27,8 +27,14 @@ Use the function aJQ() to load:
         // any jquery code
     }])
 
+or this way for $(window).load():
+
+    aJQ([window, function(){
+        // any jquery code
+    }])
+
 ## Parameters and Options
 
-You can chose between 'r' for document ready or 'l' for $(window).load()
+You can chose between 'r' for document ready or '$' for raw function after jquery was loaded or any dom for $.load function
 
 Usualy the "ready" will run first as "load".
