@@ -20,9 +20,9 @@ function aJQ(any) {
     },99);
     return;
   }
-  if(any[0] == 'r'){
+  if(any[0] == "r"){
     $(any[1]);
-  }else if (any[0] == 'l') {
+  }else if (any[0] == "l") {
     $(window).load(any[1]);
   }
 }
