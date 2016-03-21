@@ -4,8 +4,9 @@
 
 /*
 // how to use:
-// "r" -> for JQuery Ready
-// "l" -> for $(window).load()
+// "$" -> as soon as jQuery Loads (raw function)
+// "r" -> for jQuery Ready (jQuery shorthand)
+// "#any-dom-element" -> for $("#any-dom-element").load() | window for $(window).load()
 aJQ(["r",function (){
   ...
   // code to be load when jquery is ready.
