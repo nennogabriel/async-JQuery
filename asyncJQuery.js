@@ -3,25 +3,32 @@
  */
 
 /*
-// how to use:
-// "$" -> as soon as jQuery Loads (raw function)
-// "r" -> for jQuery Ready (jQuery shorthand)
-// "#any-dom-element" -> for $("#any-dom-element").load() | window for $(window).load()
-aJQ(["r",function (){
-  ...
-  // code to be load when jquery is ready.
-}]);
+// How to use:
+   // Run when dom ready
+   a$(document, function(){
+      // do something when document has been ready
+   });
+
+   // Run when window has loaded
+   a$(window, function(){
+      // do something when document has been ready
+   }, true);
+
+   // Execute the elemnt by CSS
+   a$("#WFI" , function(){
+      // do something when document has been ready
+      $("#WFI").remove();
+   });
 */
 
-function aJQ(any) {
+
+function a$(el, func, load) {
+
   if (typeof $ === "undefined"){
     setTimeout(function(){
-      aJQ(any);
-    },99);
-    return;
+      a$(el, func, load)
+    },99)
+  } else {
+    (load ? $(el).load(func()) : $(el).ready(func()))
   }
-  if(any[0] == "$"){
-    return any[1]();
-  }
-  (any[0] == "r" ? $(any[1]) : $(any[0]).load(any[1]))
 }
