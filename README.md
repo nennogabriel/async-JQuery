@@ -1,4 +1,4 @@
-The Project is Closed. To Load jquery and other Libraries in a correct way uso browsify or webpack. If need a simple js to use inline in HEAD look at [![TAL Project](https://github.com/nennogabriel/The-Async-Loader)]
+The Project is Closed. To Load jquery and other Libraries in a correct way uso browsify or webpack. If need a simple js to use inline in HEAD look at [TAL Project (https://github.com/nennogabriel/The-Async-Loader)]
 
 # async JQuery
 
